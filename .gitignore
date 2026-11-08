@@ -2,5 +2,6 @@
 .vs
 .vscode/settings.json
 build
-cmake-build*/package/
+cmake-build*
+/package/
 /*.zip
