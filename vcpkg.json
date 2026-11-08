@@ -1,0 +1,12 @@
+{
+  "name": "animationmotionfix",
+  "version-string": "1.3.2",
+  "description": "Animation Motion Fix with local CommonLibSSE-NG",
+  "dependencies": [
+    "directxtk",
+    "rapidcsv",
+    "simpleini",
+    "spdlog",
+    "xbyak"
+  ]
+}

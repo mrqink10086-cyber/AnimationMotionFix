@@ -1,0 +1,2753 @@
+{
+  "schema": "animation-motion-fix-hook-abi-audit/v1",
+  "status": "PASS",
+  "source_contract": "E:\\source\\repos\\AnimationMotionFix-master\\include\\HookSites.h",
+  "source_contract_verified": true,
+  "source_errors": [],
+  "runtimes": [
+    {
+      "runtime": "1.5.97",
+      "version": "1.5.97.0",
+      "executable": "E:\\source\\repos\\valhallaCombat\\build\\abi\\SkyrimSE-1.5.97.exe.unpacked.exe",
+      "executable_sha256": "de92095a18513fcaffe5a86fd72879d3350c61cdcdb8500b7d31df2bae9579cd",
+      "address_library": "E:\\source\\repos\\CommonLibSSE-NG-ng\\tests\\REL\\version-1-5-97-0.bin",
+      "address_library_sha256": "1d7530d001139ca58f462ea0210a8055868159057ba8b5ebc624fc5e9c4f5e9a",
+      "image_base": "0x140000000",
+      "calls": [
+        {
+          "name": "PitchTranslation",
+          "address_library_id": 36365,
+          "function_rva": "0x5d87f0",
+          "offset": "0x365",
+          "call_rva": "0x5d8b55",
+          "bytes": "e8 96 17 b2 00",
+          "opcode_is_e8_rel32": true,
+          "instruction_boundary_from_function_entry": true,
+          "original_target_rva": "0x10fa2f0",
+          "expected_target_rva": "0x10fa2f0",
+          "target_is_executable": true,
+          "function_entry_disassembly": [
+            {
+              "rva": "0x5d87f0",
+              "bytes": "48 8b c4",
+              "mnemonic": "mov",
+              "operands": "rax, rsp"
+            },
+            {
+              "rva": "0x5d87f3",
+              "bytes": "55",
+              "mnemonic": "push",
+              "operands": "rbp"
+            },
+            {
+              "rva": "0x5d87f4",
+              "bytes": "53",
+              "mnemonic": "push",
+              "operands": "rbx"
+            },
+            {
+              "rva": "0x5d87f5",
+              "bytes": "56",
+              "mnemonic": "push",
+              "operands": "rsi"
+            },
+            {
+              "rva": "0x5d87f6",
+              "bytes": "57",
+              "mnemonic": "push",
+              "operands": "rdi"
+            },
+            {
+              "rva": "0x5d87f7",
+              "bytes": "41 54",
+              "mnemonic": "push",
+              "operands": "r12"
+            },
+            {
+              "rva": "0x5d87f9",
+              "bytes": "41 56",
+              "mnemonic": "push",
+              "operands": "r14"
+            },
+            {
+              "rva": "0x5d87fb",
+              "bytes": "41 57",
+              "mnemonic": "push",
+              "operands": "r15"
+            }
+          ],
+          "target_entry_disassembly": [
+            {
+              "rva": "0x10fa2f0",
+              "bytes": "40 53",
+              "mnemonic": "push",
+              "operands": "rbx"
+            },
+            {
+              "rva": "0x10fa2f2",
+              "bytes": "48 83 ec 50",
+              "mnemonic": "sub",
+              "operands": "rsp, 0x50"
+            },
+            {
+              "rva": "0x10fa2f6",
+              "bytes": "f3 0f 10 51 04",
+              "mnemonic": "movss",
+              "operands": "xmm2, dword ptr [rcx + 4]"
+            },
+            {
+              "rva": "0x10fa2fb",
+              "bytes": "4c 8d 4c 24 20",
+              "mnemonic": "lea",
+              "operands": "r9, [rsp + 0x20]"
+            },
+            {
+              "rva": "0x10fa300",
+              "bytes": "f3 0f 10 09",
+              "mnemonic": "movss",
+              "operands": "xmm1, dword ptr [rcx]"
+            },
+            {
+              "rva": "0x10fa304",
+              "bytes": "48 8b da",
+              "mnemonic": "mov",
+              "operands": "rbx, rdx"
+            }
+          ],
+          "call_context": [
+            {
+              "rva": "0x5d8b3f",
+              "bytes": "48 8b 8f f0 00 00 00",
+              "mnemonic": "mov",
+              "operands": "rcx, qword ptr [rdi + 0xf0]"
+            },
+            {
+              "rva": "0x5d8b46",
+              "bytes": "e8 75 45 0a 00",
+              "mnemonic": "call",
+              "operands": "0x14067d0c0"
+            },
+            {
+              "rva": "0x5d8b4b",
+              "bytes": "48 8d 54 24 20",
+              "mnemonic": "lea",
+              "operands": "rdx, [rsp + 0x20]"
+            },
+            {
+              "rva": "0x5d8b50",
+              "bytes": "48 8d 4c 24 50",
+              "mnemonic": "lea",
+              "operands": "rcx, [rsp + 0x50]"
+            },
+            {
+              "rva": "0x5d8b55",
+              "bytes": "e8 96 17 b2 00",
+              "mnemonic": "call",
+              "operands": "0x1410fa2f0"
+            },
+            {
+              "rva": "0x5d8b5a",
+              "bytes": "f3 0f 10 54 24 5c",
+              "mnemonic": "movss",
+              "operands": "xmm2, dword ptr [rsp + 0x5c]"
+            },
+            {
+              "rva": "0x5d8b60",
+              "bytes": "f3 41 0f 59 d1",
+              "mnemonic": "mulss",
+              "operands": "xmm2, xmm9"
+            }
+          ]
+        },
+        {
+          "name": "PlayerRotation",
+          "address_library_id": 39379,
+          "function_rva": "0x69f730",
+          "offset": "0x42",
+          "call_rva": "0x69f772",
+          "bytes": "e8 29 fb 02 00",
+          "opcode_is_e8_rel32": true,
+          "instruction_boundary_from_function_entry": true,
+          "original_target_rva": "0x6cf2a0",
+          "expected_target_rva": "0x6cf2a0",
+          "target_is_executable": true,
+          "function_entry_disassembly": [
+            {
+              "rva": "0x69f730",
+              "bytes": "48 89 5c 24 08",
+              "mnemonic": "mov",
+              "operands": "qword ptr [rsp + 8], rbx"
+            },
+            {
+              "rva": "0x69f735",
+              "bytes": "48 89 74 24 10",
+              "mnemonic": "mov",
+              "operands": "qword ptr [rsp + 0x10], rsi"
+            },
+            {
+              "rva": "0x69f73a",
+              "bytes": "57",
+              "mnemonic": "push",
+              "operands": "rdi"
+            },
+            {
+              "rva": "0x69f73b",
+              "bytes": "48 83 ec 30",
+              "mnemonic": "sub",
+              "operands": "rsp, 0x30"
+            },
+            {
+              "rva": "0x69f73f",
+              "bytes": "f6 81 da 0b 00 00 0e",
+              "mnemonic": "test",
+              "operands": "byte ptr [rcx + 0xbda], 0xe"
+            },
+            {
+              "rva": "0x69f746",
+              "bytes": "49 8b f9",
+              "mnemonic": "mov",
+              "operands": "rdi, r9"
+            },
+            {
+              "rva": "0x69f749",
+              "bytes": "0f 29 74 24 20",
+              "mnemonic": "movaps",
+              "operands": "xmmword ptr [rsp + 0x20], xmm6"
+            },
+            {
+              "rva": "0x69f74e",
+              "bytes": "49 8b f0",
+              "mnemonic": "mov",
+              "operands": "rsi, r8"
+            }
+          ],
+          "target_entry_disassembly": [
+            {
+              "rva": "0x6cf2a0",
+              "bytes": "48 8b c4",
+              "mnemonic": "mov",
+              "operands": "rax, rsp"
+            },
+            {
+              "rva": "0x6cf2a3",
+              "bytes": "41 56",
+              "mnemonic": "push",
+              "operands": "r14"
+            },
+            {
+              "rva": "0x6cf2a5",
+              "bytes": "48 81 ec e0 00 00 00",
+              "mnemonic": "sub",
+              "operands": "rsp, 0xe0"
+            },
+            {
+              "rva": "0x6cf2ac",
+              "bytes": "48 c7 44 24 38 fe ff ff ff",
+              "mnemonic": "mov",
+              "operands": "qword ptr [rsp + 0x38], 0xfffffffffffffffe"
+            },
+            {
+              "rva": "0x6cf2b5",
+              "bytes": "48 89 58 08",
+              "mnemonic": "mov",
+              "operands": "qword ptr [rax + 8], rbx"
+            },
+            {
+              "rva": "0x6cf2b9",
+              "bytes": "48 89 68 10",
+              "mnemonic": "mov",
+              "operands": "qword ptr [rax + 0x10], rbp"
+            }
+          ],
+          "call_context": [
+            {
+              "rva": "0x69f760",
+              "bytes": "eb 15",
+              "mnemonic": "jmp",
+              "operands": "0x14069f777"
+            },
+            {
+              "rva": "0x69f762",
+              "bytes": "f7 81 c0 00 00 00 00 c0 03 00",
+              "mnemonic": "test",
+              "operands": "dword ptr [rcx + 0xc0], 0x3c000"
+            },
+            {
+              "rva": "0x69f76c",
+              "bytes": "75 09",
+              "mnemonic": "jne",
+              "operands": "0x14069f777"
+            },
+            {
+              "rva": "0x69f76e",
+              "bytes": "49 83 c1 08",
+              "mnemonic": "add",
+              "operands": "r9, 8"
+            },
+            {
+              "rva": "0x69f772",
+              "bytes": "e8 29 fb 02 00",
+              "mnemonic": "call",
+              "operands": "0x1406cf2a0"
+            },
+            {
+              "rva": "0x69f777",
+              "bytes": "4c 8b cf",
+              "mnemonic": "mov",
+              "operands": "r9, rdi"
+            },
+            {
+              "rva": "0x69f77a",
+              "bytes": "4c 8b c6",
+              "mnemonic": "mov",
+              "operands": "r8, rsi"
+            }
+          ]
+        },
+        {
+          "name": "Movement",
+          "address_library_id": 36357,
+          "function_rva": "0x5d6fb0",
+          "offset": "0x222",
+          "call_rva": "0x5d71d2",
+          "bytes": "e8 c9 02 05 00",
+          "opcode_is_e8_rel32": true,
+          "instruction_boundary_from_function_entry": true,
+          "original_target_rva": "0x6274a0",
+          "expected_target_rva": "0x6274a0",
+          "target_is_executable": true,
+          "function_entry_disassembly": [
+            {
+              "rva": "0x5d6fb0",
+              "bytes": "48 8b c4",
+              "mnemonic": "mov",
+              "operands": "rax, rsp"
+            },
+            {
+              "rva": "0x5d6fb3",
+              "bytes": "55",
+              "mnemonic": "push",
+              "operands": "rbp"
+            },
+            {
+              "rva": "0x5d6fb4",
+              "bytes": "56",
+              "mnemonic": "push",
+              "operands": "rsi"
+            },
+            {
+              "rva": "0x5d6fb5",
+              "bytes": "57",
+              "mnemonic": "push",
+              "operands": "rdi"
+            },
+            {
+              "rva": "0x5d6fb6",
+              "bytes": "41 54",
+              "mnemonic": "push",
+              "operands": "r12"
+            },
+            {
+              "rva": "0x5d6fb8",
+              "bytes": "41 55",
+              "mnemonic": "push",
+              "operands": "r13"
+            },
+            {
+              "rva": "0x5d6fba",
+              "bytes": "41 56",
+              "mnemonic": "push",
+              "operands": "r14"
+            },
+            {
+              "rva": "0x5d6fbc",
+              "bytes": "41 57",
+              "mnemonic": "push",
+              "operands": "r15"
+            }
+          ],
+          "target_entry_disassembly": [
+            {
+              "rva": "0x6274a0",
+              "bytes": "f7 81 c0 00 00 00 00 00 00 f0",
+              "mnemonic": "test",
+              "operands": "dword ptr [rcx + 0xc0], 0xf0000000"
+            },
+            {
+              "rva": "0x6274aa",
+              "bytes": "0f 95 c0",
+              "mnemonic": "setne",
+              "operands": "al"
+            },
+            {
+              "rva": "0x6274ad",
+              "bytes": "c3",
+              "mnemonic": "ret",
+              "operands": ""
+            },
+            {
+              "rva": "0x6274ae",
+              "bytes": "cc",
+              "mnemonic": "int3",
+              "operands": ""
+            },
+            {
+              "rva": "0x6274af",
+              "bytes": "cc",
+              "mnemonic": "int3",
+              "operands": ""
+            },
+            {
+              "rva": "0x6274b0",
+              "bytes": "cc",
+              "mnemonic": "int3",
+              "operands": ""
+            }
+          ],
+          "call_context": [
+            {
+              "rva": "0x5d71c3",
+              "bytes": "48 8d 55 c8",
+              "mnemonic": "lea",
+              "operands": "rdx, [rbp - 0x38]"
+            },
+            {
+              "rva": "0x5d71c7",
+              "bytes": "48 8b ce",
+              "mnemonic": "mov",
+              "operands": "rcx, rsi"
+            },
+            {
+              "rva": "0x5d71ca",
+              "bytes": "e8 d1 83 7e 00",
+              "mnemonic": "call",
+              "operands": "0x140dbf5a0"
+            },
+            {
+              "rva": "0x5d71cf",
+              "bytes": "48 8b cf",
+              "mnemonic": "mov",
+              "operands": "rcx, rdi"
+            },
+            {
+              "rva": "0x5d71d2",
+              "bytes": "e8 c9 02 05 00",
+              "mnemonic": "call",
+              "operands": "0x1406274a0"
+            },
+            {
+              "rva": "0x5d71d7",
+              "bytes": "84 c0",
+              "mnemonic": "test",
+              "operands": "al, al"
+            },
+            {
+              "rva": "0x5d71d9",
+              "bytes": "0f 84 c0 00 00 00",
+              "mnemonic": "je",
+              "operands": "0x1405d729f"
+            }
+          ]
+        },
+        {
+          "name": "ProxyProxy",
+          "address_library_id": 77248,
+          "function_rva": "0xdefba0",
+          "offset": "0x3f",
+          "call_rva": "0xdefbdf",
+          "bytes": "e8 7c 20 fd ff",
+          "opcode_is_e8_rel32": true,
+          "instruction_boundary_from_function_entry": true,
+          "original_target_rva": "0xdc1c60",
+          "expected_target_rva": "0xdc1c60",
+          "target_is_executable": true,
+          "function_entry_disassembly": [
+            {
+              "rva": "0xdefba0",
+              "bytes": "48 89 5c 24 08",
+              "mnemonic": "mov",
+              "operands": "qword ptr [rsp + 8], rbx"
+            },
+            {
+              "rva": "0xdefba5",
+              "bytes": "48 89 6c 24 10",
+              "mnemonic": "mov",
+              "operands": "qword ptr [rsp + 0x10], rbp"
+            },
+            {
+              "rva": "0xdefbaa",
+              "bytes": "48 89 74 24 18",
+              "mnemonic": "mov",
+              "operands": "qword ptr [rsp + 0x18], rsi"
+            },
+            {
+              "rva": "0xdefbaf",
+              "bytes": "57",
+              "mnemonic": "push",
+              "operands": "rdi"
+            },
+            {
+              "rva": "0xdefbb0",
+              "bytes": "48 83 ec 20",
+              "mnemonic": "sub",
+              "operands": "rsp, 0x20"
+            },
+            {
+              "rva": "0xdefbb4",
+              "bytes": "48 8b f9",
+              "mnemonic": "mov",
+              "operands": "rdi, rcx"
+            },
+            {
+              "rva": "0xdefbb7",
+              "bytes": "49 8b d9",
+              "mnemonic": "mov",
+              "operands": "rbx, r9"
+            },
+            {
+              "rva": "0xdefbba",
+              "bytes": "49 8b c8",
+              "mnemonic": "mov",
+              "operands": "rcx, r8"
+            }
+          ],
+          "target_entry_disassembly": [
+            {
+              "rva": "0xdc1c60",
+              "bytes": "48 89 5c 24 18",
+              "mnemonic": "mov",
+              "operands": "qword ptr [rsp + 0x18], rbx"
+            },
+            {
+              "rva": "0xdc1c65",
+              "bytes": "48 89 6c 24 20",
+              "mnemonic": "mov",
+              "operands": "qword ptr [rsp + 0x20], rbp"
+            },
+            {
+              "rva": "0xdc1c6a",
+              "bytes": "57",
+              "mnemonic": "push",
+              "operands": "rdi"
+            },
+            {
+              "rva": "0xdc1c6b",
+              "bytes": "48 83 ec 50",
+              "mnemonic": "sub",
+              "operands": "rsp, 0x50"
+            },
+            {
+              "rva": "0xdc1c6f",
+              "bytes": "48 8b 02",
+              "mnemonic": "mov",
+              "operands": "rax, qword ptr [rdx]"
+            },
+            {
+              "rva": "0xdc1c72",
+              "bytes": "48 8b f9",
+              "mnemonic": "mov",
+              "operands": "rdi, rcx"
+            }
+          ],
+          "call_context": [
+            {
+              "rva": "0xdefbd3",
+              "bytes": "4c 8b c3",
+              "mnemonic": "mov",
+              "operands": "r8, rbx"
+            },
+            {
+              "rva": "0xdefbd6",
+              "bytes": "48 8b cd",
+              "mnemonic": "mov",
+              "operands": "rcx, rbp"
+            },
+            {
+              "rva": "0xdefbd9",
+              "bytes": "48 8b d0",
+              "mnemonic": "mov",
+              "operands": "rdx, rax"
+            },
+            {
+              "rva": "0xdefbdc",
+              "bytes": "48 8b f0",
+              "mnemonic": "mov",
+              "operands": "rsi, rax"
+            },
+            {
+              "rva": "0xdefbdf",
+              "bytes": "e8 7c 20 fd ff",
+              "mnemonic": "call",
+              "operands": "0x140dc1c60"
+            },
+            {
+              "rva": "0xdefbe4",
+              "bytes": "48 8b 0d 25 58 15 02",
+              "mnemonic": "mov",
+              "operands": "rcx, qword ptr [rip + 0x2155825]"
+            },
+            {
+              "rva": "0xdefbeb",
+              "bytes": "48 85 c9",
+              "mnemonic": "test",
+              "operands": "rcx, rcx"
+            }
+          ]
+        },
+        {
+          "name": "ProxyRigid",
+          "address_library_id": 77244,
+          "function_rva": "0xdef090",
+          "offset": "0x3cd",
+          "call_rva": "0xdef45d",
+          "bytes": "e8 fe 27 fd ff",
+          "opcode_is_e8_rel32": true,
+          "instruction_boundary_from_function_entry": true,
+          "original_target_rva": "0xdc1c60",
+          "expected_target_rva": "0xdc1c60",
+          "target_is_executable": true,
+          "function_entry_disassembly": [
+            {
+              "rva": "0xdef090",
+              "bytes": "48 8b c4",
+              "mnemonic": "mov",
+              "operands": "rax, rsp"
+            },
+            {
+              "rva": "0xdef093",
+              "bytes": "4c 89 48 20",
+              "mnemonic": "mov",
+              "operands": "qword ptr [rax + 0x20], r9"
+            },
+            {
+              "rva": "0xdef097",
+              "bytes": "4c 89 40 18",
+              "mnemonic": "mov",
+              "operands": "qword ptr [rax + 0x18], r8"
+            },
+            {
+              "rva": "0xdef09b",
+              "bytes": "55",
+              "mnemonic": "push",
+              "operands": "rbp"
+            },
+            {
+              "rva": "0xdef09c",
+              "bytes": "56",
+              "mnemonic": "push",
+              "operands": "rsi"
+            },
+            {
+              "rva": "0xdef09d",
+              "bytes": "57",
+              "mnemonic": "push",
+              "operands": "rdi"
+            },
+            {
+              "rva": "0xdef09e",
+              "bytes": "41 54",
+              "mnemonic": "push",
+              "operands": "r12"
+            },
+            {
+              "rva": "0xdef0a0",
+              "bytes": "41 55",
+              "mnemonic": "push",
+              "operands": "r13"
+            }
+          ],
+          "target_entry_disassembly": [
+            {
+              "rva": "0xdc1c60",
+              "bytes": "48 89 5c 24 18",
+              "mnemonic": "mov",
+              "operands": "qword ptr [rsp + 0x18], rbx"
+            },
+            {
+              "rva": "0xdc1c65",
+              "bytes": "48 89 6c 24 20",
+              "mnemonic": "mov",
+              "operands": "qword ptr [rsp + 0x20], rbp"
+            },
+            {
+              "rva": "0xdc1c6a",
+              "bytes": "57",
+              "mnemonic": "push",
+              "operands": "rdi"
+            },
+            {
+              "rva": "0xdc1c6b",
+              "bytes": "48 83 ec 50",
+              "mnemonic": "sub",
+              "operands": "rsp, 0x50"
+            },
+            {
+              "rva": "0xdc1c6f",
+              "bytes": "48 8b 02",
+              "mnemonic": "mov",
+              "operands": "rax, qword ptr [rdx]"
+            },
+            {
+              "rva": "0xdc1c72",
+              "bytes": "48 8b f9",
+              "mnemonic": "mov",
+              "operands": "rdi, rcx"
+            }
+          ],
+          "call_context": [
+            {
+              "rva": "0xdef44c",
+              "bytes": "43 0f 29 04 3e",
+              "mnemonic": "movaps",
+              "operands": "xmmword ptr [r14 + r15], xmm0"
+            },
+            {
+              "rva": "0xdef451",
+              "bytes": "4c 8b 44 24 30",
+              "mnemonic": "mov",
+              "operands": "r8, qword ptr [rsp + 0x30]"
+            },
+            {
+              "rva": "0xdef456",
+              "bytes": "48 8b d7",
+              "mnemonic": "mov",
+              "operands": "rdx, rdi"
+            },
+            {
+              "rva": "0xdef459",
+              "bytes": "48 8d 4e 10",
+              "mnemonic": "lea",
+              "operands": "rcx, [rsi + 0x10]"
+            },
+            {
+              "rva": "0xdef45d",
+              "bytes": "e8 fe 27 fd ff",
+              "mnemonic": "call",
+              "operands": "0x140dc1c60"
+            },
+            {
+              "rva": "0xdef462",
+              "bytes": "48 8b 0d a7 5f 15 02",
+              "mnemonic": "mov",
+              "operands": "rcx, qword ptr [rip + 0x2155fa7]"
+            },
+            {
+              "rva": "0xdef469",
+              "bytes": "48 85 c9",
+              "mnemonic": "test",
+              "operands": "rcx, rcx"
+            }
+          ]
+        },
+        {
+          "name": "RigidProxy",
+          "address_library_id": 77321,
+          "function_rva": "0xdf2b30",
+          "offset": "0x159",
+          "call_rva": "0xdf2c89",
+          "bytes": "e8 22 09 00 00",
+          "opcode_is_e8_rel32": true,
+          "instruction_boundary_from_function_entry": true,
+          "original_target_rva": "0xdf35b0",
+          "expected_target_rva": "0xdf35b0",
+          "target_is_executable": true,
+          "function_entry_disassembly": [
+            {
+              "rva": "0xdf2b30",
+              "bytes": "48 8b c4",
+              "mnemonic": "mov",
+              "operands": "rax, rsp"
+            },
+            {
+              "rva": "0xdf2b33",
+              "bytes": "57",
+              "mnemonic": "push",
+              "operands": "rdi"
+            },
+            {
+              "rva": "0xdf2b34",
+              "bytes": "48 83 ec 70",
+              "mnemonic": "sub",
+              "operands": "rsp, 0x70"
+            },
+            {
+              "rva": "0xdf2b38",
+              "bytes": "48 c7 40 a8 fe ff ff ff",
+              "mnemonic": "mov",
+              "operands": "qword ptr [rax - 0x58], 0xfffffffffffffffe"
+            },
+            {
+              "rva": "0xdf2b40",
+              "bytes": "48 89 58 10",
+              "mnemonic": "mov",
+              "operands": "qword ptr [rax + 0x10], rbx"
+            },
+            {
+              "rva": "0xdf2b44",
+              "bytes": "0f 29 70 e8",
+              "mnemonic": "movaps",
+              "operands": "xmmword ptr [rax - 0x18], xmm6"
+            },
+            {
+              "rva": "0xdf2b48",
+              "bytes": "0f 29 78 d8",
+              "mnemonic": "movaps",
+              "operands": "xmmword ptr [rax - 0x28], xmm7"
+            },
+            {
+              "rva": "0xdf2b4c",
+              "bytes": "48 8b d9",
+              "mnemonic": "mov",
+              "operands": "rbx, rcx"
+            }
+          ],
+          "target_entry_disassembly": [
+            {
+              "rva": "0xdf35b0",
+              "bytes": "48 8b c4",
+              "mnemonic": "mov",
+              "operands": "rax, rsp"
+            },
+            {
+              "rva": "0xdf35b3",
+              "bytes": "57",
+              "mnemonic": "push",
+              "operands": "rdi"
+            },
+            {
+              "rva": "0xdf35b4",
+              "bytes": "48 81 ec 80 00 00 00",
+              "mnemonic": "sub",
+              "operands": "rsp, 0x80"
+            },
+            {
+              "rva": "0xdf35bb",
+              "bytes": "48 c7 40 98 fe ff ff ff",
+              "mnemonic": "mov",
+              "operands": "qword ptr [rax - 0x68], 0xfffffffffffffffe"
+            },
+            {
+              "rva": "0xdf35c3",
+              "bytes": "48 89 58 08",
+              "mnemonic": "mov",
+              "operands": "qword ptr [rax + 8], rbx"
+            },
+            {
+              "rva": "0xdf35c7",
+              "bytes": "0f 29 70 e8",
+              "mnemonic": "movaps",
+              "operands": "xmmword ptr [rax - 0x18], xmm6"
+            }
+          ],
+          "call_context": [
+            {
+              "rva": "0xdf2c7c",
+              "bytes": "74 08",
+              "mnemonic": "je",
+              "operands": "0x140df2c86"
+            },
+            {
+              "rva": "0xdf2c7e",
+              "bytes": "48 8b cb",
+              "mnemonic": "mov",
+              "operands": "rcx, rbx"
+            },
+            {
+              "rva": "0xdf2c81",
+              "bytes": "e8 2a dc fc ff",
+              "mnemonic": "call",
+              "operands": "0x140dc08b0"
+            },
+            {
+              "rva": "0xdf2c86",
+              "bytes": "48 8b cb",
+              "mnemonic": "mov",
+              "operands": "rcx, rbx"
+            },
+            {
+              "rva": "0xdf2c89",
+              "bytes": "e8 22 09 00 00",
+              "mnemonic": "call",
+              "operands": "0x140df35b0"
+            },
+            {
+              "rva": "0xdf2c8e",
+              "bytes": "90",
+              "mnemonic": "nop",
+              "operands": ""
+            },
+            {
+              "rva": "0xdf2c8f",
+              "bytes": "48 85 ff",
+              "mnemonic": "test",
+              "operands": "rdi, rdi"
+            }
+          ]
+        },
+        {
+          "name": "RigidRigid",
+          "address_library_id": 77306,
+          "function_rva": "0xdf16a0",
+          "offset": "0x29f",
+          "call_rva": "0xdf193f",
+          "bytes": "e8 1c 03 fd ff",
+          "opcode_is_e8_rel32": true,
+          "instruction_boundary_from_function_entry": true,
+          "original_target_rva": "0xdc1c60",
+          "expected_target_rva": "0xdc1c60",
+          "target_is_executable": true,
+          "function_entry_disassembly": [
+            {
+              "rva": "0xdf16a0",
+              "bytes": "48 8b c4",
+              "mnemonic": "mov",
+              "operands": "rax, rsp"
+            },
+            {
+              "rva": "0xdf16a3",
+              "bytes": "4c 89 48 20",
+              "mnemonic": "mov",
+              "operands": "qword ptr [rax + 0x20], r9"
+            },
+            {
+              "rva": "0xdf16a7",
+              "bytes": "4c 89 40 18",
+              "mnemonic": "mov",
+              "operands": "qword ptr [rax + 0x18], r8"
+            },
+            {
+              "rva": "0xdf16ab",
+              "bytes": "48 89 50 10",
+              "mnemonic": "mov",
+              "operands": "qword ptr [rax + 0x10], rdx"
+            },
+            {
+              "rva": "0xdf16af",
+              "bytes": "55",
+              "mnemonic": "push",
+              "operands": "rbp"
+            },
+            {
+              "rva": "0xdf16b0",
+              "bytes": "53",
+              "mnemonic": "push",
+              "operands": "rbx"
+            },
+            {
+              "rva": "0xdf16b1",
+              "bytes": "56",
+              "mnemonic": "push",
+              "operands": "rsi"
+            },
+            {
+              "rva": "0xdf16b2",
+              "bytes": "57",
+              "mnemonic": "push",
+              "operands": "rdi"
+            }
+          ],
+          "target_entry_disassembly": [
+            {
+              "rva": "0xdc1c60",
+              "bytes": "48 89 5c 24 18",
+              "mnemonic": "mov",
+              "operands": "qword ptr [rsp + 0x18], rbx"
+            },
+            {
+              "rva": "0xdc1c65",
+              "bytes": "48 89 6c 24 20",
+              "mnemonic": "mov",
+              "operands": "qword ptr [rsp + 0x20], rbp"
+            },
+            {
+              "rva": "0xdc1c6a",
+              "bytes": "57",
+              "mnemonic": "push",
+              "operands": "rdi"
+            },
+            {
+              "rva": "0xdc1c6b",
+              "bytes": "48 83 ec 50",
+              "mnemonic": "sub",
+              "operands": "rsp, 0x50"
+            },
+            {
+              "rva": "0xdc1c6f",
+              "bytes": "48 8b 02",
+              "mnemonic": "mov",
+              "operands": "rax, qword ptr [rdx]"
+            },
+            {
+              "rva": "0xdc1c72",
+              "bytes": "48 8b f9",
+              "mnemonic": "mov",
+              "operands": "rdi, rcx"
+            }
+          ],
+          "call_context": [
+            {
+              "rva": "0xdf1934",
+              "bytes": "74 0e",
+              "mnemonic": "je",
+              "operands": "0x140df1944"
+            },
+            {
+              "rva": "0xdf1936",
+              "bytes": "4c 8b c6",
+              "mnemonic": "mov",
+              "operands": "r8, rsi"
+            },
+            {
+              "rva": "0xdf1939",
+              "bytes": "48 8b d0",
+              "mnemonic": "mov",
+              "operands": "rdx, rax"
+            },
+            {
+              "rva": "0xdf193c",
+              "bytes": "49 8b cf",
+              "mnemonic": "mov",
+              "operands": "rcx, r15"
+            },
+            {
+              "rva": "0xdf193f",
+              "bytes": "e8 1c 03 fd ff",
+              "mnemonic": "call",
+              "operands": "0x140dc1c60"
+            },
+            {
+              "rva": "0xdf1944",
+              "bytes": "0f 28 46 10",
+              "mnemonic": "movaps",
+              "operands": "xmm0, xmmword ptr [rsi + 0x10]"
+            },
+            {
+              "rva": "0xdf1948",
+              "bytes": "0f 29 44 24 50",
+              "mnemonic": "movaps",
+              "operands": "xmmword ptr [rsp + 0x50], xmm0"
+            }
+          ]
+        }
+      ],
+      "virtual_hooks": [
+        {
+          "name": "ProcessConstraintsCallback",
+          "class": "bhkCharProxyController",
+          "address_library_id": 289831,
+          "primary_subtable_index": 0,
+          "table_rva": "0x17a4f70",
+          "slot": 1,
+          "byte_offset": "0x8",
+          "pointer_value": "0x140def090",
+          "target_rva": "0xdef090",
+          "expected_target_rva": "0xdef090",
+          "target_is_executable": true,
+          "target_entry_disassembly": [
+            {
+              "rva": "0xdef090",
+              "bytes": "48 8b c4",
+              "mnemonic": "mov",
+              "operands": "rax, rsp"
+            },
+            {
+              "rva": "0xdef093",
+              "bytes": "4c 89 48 20",
+              "mnemonic": "mov",
+              "operands": "qword ptr [rax + 0x20], r9"
+            },
+            {
+              "rva": "0xdef097",
+              "bytes": "4c 89 40 18",
+              "mnemonic": "mov",
+              "operands": "qword ptr [rax + 0x18], r8"
+            },
+            {
+              "rva": "0xdef09b",
+              "bytes": "55",
+              "mnemonic": "push",
+              "operands": "rbp"
+            },
+            {
+              "rva": "0xdef09c",
+              "bytes": "56",
+              "mnemonic": "push",
+              "operands": "rsi"
+            },
+            {
+              "rva": "0xdef09d",
+              "bytes": "57",
+              "mnemonic": "push",
+              "operands": "rdi"
+            }
+          ],
+          "commonlib_header_claim": "bhkCharProxyController's primary base is hkpCharacterProxyListener; ProcessConstraintsCallback is inherited slot 1.",
+          "header_evidence": [
+            {
+              "path": "E:\\source\\repos\\CommonLibSSE-NG-ng\\include\\RE\\B\\bhkCharProxyController.h",
+              "line": 12,
+              "text": "public hkpCharacterProxyListener,  // 000"
+            },
+            {
+              "path": "E:\\source\\repos\\CommonLibSSE-NG-ng\\include\\RE\\B\\bhkCharProxyController.h",
+              "line": 22,
+              "text": "void ProcessConstraintsCallback(const hkpCharacterProxy* a_proxy, const hkArray<hkpRootCdPoint>& a_manifold, hkpSimplexSolverInput& a_input) override;                  // 01"
+            },
+            {
+              "path": "E:\\source\\repos\\CommonLibSSE-NG-ng\\include\\RE\\H\\hkpCharacterProxyListener.h",
+              "line": 48,
+              "text": "virtual void ProcessConstraintsCallback(const hkpCharacterProxy* a_proxy, const hkArray<hkpRootCdPoint>& a_manifold, hkpSimplexSolverInput& a_input);                  // 01 - { return; }"
+            }
+          ],
+          "source_install_check": "VTABLE_bhkCharProxyController\\s*\\[\\s*0\\s*\\][\\s\\S]{0,300}?write_vfunc\\(\\s*0x1\\s*,\\s*&Hook_ProcessConstraintsCallback"
+        },
+        {
+          "name": "DeleteThis",
+          "class": "bhkCharRigidBodyController",
+          "address_library_id": 289861,
+          "primary_subtable_index": 0,
+          "table_rva": "0x17a5628",
+          "slot": 1,
+          "byte_offset": "0x8",
+          "pointer_value": "0x140c61a30",
+          "target_rva": "0xc61a30",
+          "expected_target_rva": "0xc61a30",
+          "target_is_executable": true,
+          "target_entry_disassembly": [
+            {
+              "rva": "0xc61a30",
+              "bytes": "48 85 c9",
+              "mnemonic": "test",
+              "operands": "rcx, rcx"
+            },
+            {
+              "rva": "0xc61a33",
+              "bytes": "74 0b",
+              "mnemonic": "je",
+              "operands": "0x140c61a40"
+            },
+            {
+              "rva": "0xc61a35",
+              "bytes": "48 8b 01",
+              "mnemonic": "mov",
+              "operands": "rax, qword ptr [rcx]"
+            },
+            {
+              "rva": "0xc61a38",
+              "bytes": "ba 01 00 00 00",
+              "mnemonic": "mov",
+              "operands": "edx, 1"
+            },
+            {
+              "rva": "0xc61a3d",
+              "bytes": "48 ff 20",
+              "mnemonic": "jmp",
+              "operands": "qword ptr [rax]"
+            },
+            {
+              "rva": "0xc61a40",
+              "bytes": "c3",
+              "mnemonic": "ret",
+              "operands": ""
+            }
+          ],
+          "commonlib_header_claim": "The primary controller base inherits NiRefObject; DeleteThis is its slot 1.",
+          "header_evidence": [
+            {
+              "path": "E:\\source\\repos\\CommonLibSSE-NG-ng\\include\\RE\\B\\bhkCharRigidBodyController.h",
+              "line": 10,
+              "text": "public bhkCharacterController,        // 00"
+            },
+            {
+              "path": "E:\\source\\repos\\CommonLibSSE-NG-ng\\include\\RE\\B\\bhkCharacterController.h",
+              "line": 74,
+              "text": "public NiRefObject,                                 // 000"
+            },
+            {
+              "path": "E:\\source\\repos\\CommonLibSSE-NG-ng\\include\\RE\\N\\NiRefObject.h",
+              "line": 19,
+              "text": "virtual void DeleteThis();  // 01"
+            }
+          ],
+          "source_install_check": "VTABLE_bhkCharRigidBodyController\\s*\\[\\s*0\\s*\\][\\s\\S]{0,300}?write_vfunc\\(\\s*0x1\\s*,\\s*&Hook_DeleteThis"
+        },
+        {
+          "name": "ContactPointCallback",
+          "class": "FOCollisionListener",
+          "address_library_id": 242607,
+          "primary_subtable_index": 0,
+          "table_rva": "0x15a7908",
+          "slot": 0,
+          "byte_offset": "0x0",
+          "pointer_value": "0x14039c690",
+          "target_rva": "0x39c690",
+          "expected_target_rva": "0x39c690",
+          "target_is_executable": true,
+          "target_entry_disassembly": [
+            {
+              "rva": "0x39c690",
+              "bytes": "48 8b c4",
+              "mnemonic": "mov",
+              "operands": "rax, rsp"
+            },
+            {
+              "rva": "0x39c693",
+              "bytes": "55",
+              "mnemonic": "push",
+              "operands": "rbp"
+            },
+            {
+              "rva": "0x39c694",
+              "bytes": "56",
+              "mnemonic": "push",
+              "operands": "rsi"
+            },
+            {
+              "rva": "0x39c695",
+              "bytes": "57",
+              "mnemonic": "push",
+              "operands": "rdi"
+            },
+            {
+              "rva": "0x39c696",
+              "bytes": "41 56",
+              "mnemonic": "push",
+              "operands": "r14"
+            },
+            {
+              "rva": "0x39c698",
+              "bytes": "41 57",
+              "mnemonic": "push",
+              "operands": "r15"
+            }
+          ],
+          "commonlib_header_claim": "FOCollisionListener's primary base is bhkBackfaceContactListener and its override occupies inherited slot 0.",
+          "header_evidence": [
+            {
+              "path": "E:\\source\\repos\\CommonLibSSE-NG-ng\\include\\RE\\F\\FOCollisionListener.h",
+              "line": 14,
+              "text": "public bhkBackfaceContactListener,           // 00"
+            },
+            {
+              "path": "E:\\source\\repos\\CommonLibSSE-NG-ng\\include\\RE\\F\\FOCollisionListener.h",
+              "line": 33,
+              "text": "void ContactPointCallback(const hkpContactPointEvent&) override;  // 00"
+            },
+            {
+              "path": "E:\\source\\repos\\CommonLibSSE-NG-ng\\include\\RE\\B\\bhkBackfaceContactListener.h",
+              "line": 7,
+              "text": "class bhkBackfaceContactListener : public bhkContactListener"
+            },
+            {
+              "path": "E:\\source\\repos\\CommonLibSSE-NG-ng\\include\\RE\\H\\hkpContactListener.h",
+              "line": 18,
+              "text": "virtual void ContactPointCallback(const hkpContactPointEvent&) {}   // 00"
+            }
+          ],
+          "source_install_check": "VTABLE_FOCollisionListener\\s*\\[\\s*0\\s*\\][\\s\\S]{0,300}?write_vfunc\\(\\s*0x0\\s*,\\s*&Hook_ContactPointCallback"
+        }
+      ],
+      "errors": [],
+      "status": "PASS"
+    },
+    {
+      "runtime": "1.6.1170",
+      "version": "1.6.1170.0",
+      "executable": "E:\\source\\repos\\valhallaCombat\\build\\abi\\SkyrimSE-1.6.1170.exe.unpacked.exe",
+      "executable_sha256": "80c1ea737d33c6bfac09b101b8d77ab0f9f6630128c3ed052f9d945bed54e7e4",
+      "address_library": "E:\\source\\repos\\CommonLibSSE-NG-ng\\tests\\REL\\versionlib-1-6-1170-0.bin",
+      "address_library_sha256": "c4093c569a3c83b26587f4b9ea4c55de9ae6e73b84a2af9fb3fbd30e2fe0d452",
+      "image_base": "0x140000000",
+      "calls": [
+        {
+          "name": "PitchTranslation",
+          "address_library_id": 37356,
+          "function_rva": "0x6698d0",
+          "offset": "0x3fe",
+          "call_rva": "0x669cce",
+          "bytes": "e8 cd 7c b8 00",
+          "opcode_is_e8_rel32": true,
+          "instruction_boundary_from_function_entry": true,
+          "original_target_rva": "0x11f19a0",
+          "expected_target_rva": "0x11f19a0",
+          "target_is_executable": true,
+          "function_entry_disassembly": [
+            {
+              "rva": "0x6698d0",
+              "bytes": "48 8b c4",
+              "mnemonic": "mov",
+              "operands": "rax, rsp"
+            },
+            {
+              "rva": "0x6698d3",
+              "bytes": "55",
+              "mnemonic": "push",
+              "operands": "rbp"
+            },
+            {
+              "rva": "0x6698d4",
+              "bytes": "56",
+              "mnemonic": "push",
+              "operands": "rsi"
+            },
+            {
+              "rva": "0x6698d5",
+              "bytes": "57",
+              "mnemonic": "push",
+              "operands": "rdi"
+            },
+            {
+              "rva": "0x6698d6",
+              "bytes": "41 54",
+              "mnemonic": "push",
+              "operands": "r12"
+            },
+            {
+              "rva": "0x6698d8",
+              "bytes": "41 55",
+              "mnemonic": "push",
+              "operands": "r13"
+            },
+            {
+              "rva": "0x6698da",
+              "bytes": "41 56",
+              "mnemonic": "push",
+              "operands": "r14"
+            },
+            {
+              "rva": "0x6698dc",
+              "bytes": "41 57",
+              "mnemonic": "push",
+              "operands": "r15"
+            }
+          ],
+          "target_entry_disassembly": [
+            {
+              "rva": "0x11f19a0",
+              "bytes": "40 53",
+              "mnemonic": "push",
+              "operands": "rbx"
+            },
+            {
+              "rva": "0x11f19a2",
+              "bytes": "48 83 ec 50",
+              "mnemonic": "sub",
+              "operands": "rsp, 0x50"
+            },
+            {
+              "rva": "0x11f19a6",
+              "bytes": "48 8b da",
+              "mnemonic": "mov",
+              "operands": "rbx, rdx"
+            },
+            {
+              "rva": "0x11f19a9",
+              "bytes": "48 8d 54 24 20",
+              "mnemonic": "lea",
+              "operands": "rdx, [rsp + 0x20]"
+            },
+            {
+              "rva": "0x11f19ae",
+              "bytes": "e8 cd 21 00 00",
+              "mnemonic": "call",
+              "operands": "0x1411f3b80"
+            },
+            {
+              "rva": "0x11f19b3",
+              "bytes": "f3 0f 10 44 24 24",
+              "mnemonic": "movss",
+              "operands": "xmm0, dword ptr [rsp + 0x24]"
+            }
+          ],
+          "call_context": [
+            {
+              "rva": "0x669cb8",
+              "bytes": "48 8b 8f f8 00 00 00",
+              "mnemonic": "mov",
+              "operands": "rcx, qword ptr [rdi + 0xf8]"
+            },
+            {
+              "rva": "0x669cbf",
+              "bytes": "e8 ac 6c 0a 00",
+              "mnemonic": "call",
+              "operands": "0x140710970"
+            },
+            {
+              "rva": "0x669cc4",
+              "bytes": "48 8d 54 24 20",
+              "mnemonic": "lea",
+              "operands": "rdx, [rsp + 0x20]"
+            },
+            {
+              "rva": "0x669cc9",
+              "bytes": "48 8d 4c 24 50",
+              "mnemonic": "lea",
+              "operands": "rcx, [rsp + 0x50]"
+            },
+            {
+              "rva": "0x669cce",
+              "bytes": "e8 cd 7c b8 00",
+              "mnemonic": "call",
+              "operands": "0x1411f19a0"
+            },
+            {
+              "rva": "0x669cd3",
+              "bytes": "f3 0f 10 54 24 5c",
+              "mnemonic": "movss",
+              "operands": "xmm2, dword ptr [rsp + 0x5c]"
+            },
+            {
+              "rva": "0x669cd9",
+              "bytes": "f3 41 0f 59 d2",
+              "mnemonic": "mulss",
+              "operands": "xmm2, xmm10"
+            }
+          ]
+        },
+        {
+          "name": "PlayerRotation",
+          "address_library_id": 40451,
+          "function_rva": "0x734080",
+          "offset": "0x42",
+          "call_rva": "0x7340c2",
+          "bytes": "e8 19 f5 02 00",
+          "opcode_is_e8_rel32": true,
+          "instruction_boundary_from_function_entry": true,
+          "original_target_rva": "0x7635e0",
+          "expected_target_rva": "0x7635e0",
+          "target_is_executable": true,
+          "function_entry_disassembly": [
+            {
+              "rva": "0x734080",
+              "bytes": "48 89 5c 24 08",
+              "mnemonic": "mov",
+              "operands": "qword ptr [rsp + 8], rbx"
+            },
+            {
+              "rva": "0x734085",
+              "bytes": "48 89 74 24 10",
+              "mnemonic": "mov",
+              "operands": "qword ptr [rsp + 0x10], rsi"
+            },
+            {
+              "rva": "0x73408a",
+              "bytes": "57",
+              "mnemonic": "push",
+              "operands": "rdi"
+            },
+            {
+              "rva": "0x73408b",
+              "bytes": "48 83 ec 30",
+              "mnemonic": "sub",
+              "operands": "rsp, 0x30"
+            },
+            {
+              "rva": "0x73408f",
+              "bytes": "f6 81 e2 0b 00 00 0e",
+              "mnemonic": "test",
+              "operands": "byte ptr [rcx + 0xbe2], 0xe"
+            },
+            {
+              "rva": "0x734096",
+              "bytes": "49 8b f9",
+              "mnemonic": "mov",
+              "operands": "rdi, r9"
+            },
+            {
+              "rva": "0x734099",
+              "bytes": "0f 29 74 24 20",
+              "mnemonic": "movaps",
+              "operands": "xmmword ptr [rsp + 0x20], xmm6"
+            },
+            {
+              "rva": "0x73409e",
+              "bytes": "49 8b f0",
+              "mnemonic": "mov",
+              "operands": "rsi, r8"
+            }
+          ],
+          "target_entry_disassembly": [
+            {
+              "rva": "0x7635e0",
+              "bytes": "48 8b c4",
+              "mnemonic": "mov",
+              "operands": "rax, rsp"
+            },
+            {
+              "rva": "0x7635e3",
+              "bytes": "41 56",
+              "mnemonic": "push",
+              "operands": "r14"
+            },
+            {
+              "rva": "0x7635e5",
+              "bytes": "48 81 ec e0 00 00 00",
+              "mnemonic": "sub",
+              "operands": "rsp, 0xe0"
+            },
+            {
+              "rva": "0x7635ec",
+              "bytes": "48 c7 44 24 30 fe ff ff ff",
+              "mnemonic": "mov",
+              "operands": "qword ptr [rsp + 0x30], 0xfffffffffffffffe"
+            },
+            {
+              "rva": "0x7635f5",
+              "bytes": "48 89 58 08",
+              "mnemonic": "mov",
+              "operands": "qword ptr [rax + 8], rbx"
+            },
+            {
+              "rva": "0x7635f9",
+              "bytes": "48 89 68 10",
+              "mnemonic": "mov",
+              "operands": "qword ptr [rax + 0x10], rbp"
+            }
+          ],
+          "call_context": [
+            {
+              "rva": "0x7340b0",
+              "bytes": "eb 15",
+              "mnemonic": "jmp",
+              "operands": "0x1407340c7"
+            },
+            {
+              "rva": "0x7340b2",
+              "bytes": "f7 81 c8 00 00 00 00 c0 03 00",
+              "mnemonic": "test",
+              "operands": "dword ptr [rcx + 0xc8], 0x3c000"
+            },
+            {
+              "rva": "0x7340bc",
+              "bytes": "75 09",
+              "mnemonic": "jne",
+              "operands": "0x1407340c7"
+            },
+            {
+              "rva": "0x7340be",
+              "bytes": "49 83 c1 08",
+              "mnemonic": "add",
+              "operands": "r9, 8"
+            },
+            {
+              "rva": "0x7340c2",
+              "bytes": "e8 19 f5 02 00",
+              "mnemonic": "call",
+              "operands": "0x1407635e0"
+            },
+            {
+              "rva": "0x7340c7",
+              "bytes": "4c 8b cf",
+              "mnemonic": "mov",
+              "operands": "r9, rdi"
+            },
+            {
+              "rva": "0x7340ca",
+              "bytes": "4c 8b c6",
+              "mnemonic": "mov",
+              "operands": "r8, rsi"
+            }
+          ]
+        },
+        {
+          "name": "Movement",
+          "address_library_id": 37348,
+          "function_rva": "0x667d40",
+          "offset": "0x1fb",
+          "call_rva": "0x667f3b",
+          "bytes": "e8 60 0f 05 00",
+          "opcode_is_e8_rel32": true,
+          "instruction_boundary_from_function_entry": true,
+          "original_target_rva": "0x6b8ea0",
+          "expected_target_rva": "0x6b8ea0",
+          "target_is_executable": true,
+          "function_entry_disassembly": [
+            {
+              "rva": "0x667d40",
+              "bytes": "48 8b c4",
+              "mnemonic": "mov",
+              "operands": "rax, rsp"
+            },
+            {
+              "rva": "0x667d43",
+              "bytes": "55",
+              "mnemonic": "push",
+              "operands": "rbp"
+            },
+            {
+              "rva": "0x667d44",
+              "bytes": "56",
+              "mnemonic": "push",
+              "operands": "rsi"
+            },
+            {
+              "rva": "0x667d45",
+              "bytes": "57",
+              "mnemonic": "push",
+              "operands": "rdi"
+            },
+            {
+              "rva": "0x667d46",
+              "bytes": "41 54",
+              "mnemonic": "push",
+              "operands": "r12"
+            },
+            {
+              "rva": "0x667d48",
+              "bytes": "41 55",
+              "mnemonic": "push",
+              "operands": "r13"
+            },
+            {
+              "rva": "0x667d4a",
+              "bytes": "41 56",
+              "mnemonic": "push",
+              "operands": "r14"
+            },
+            {
+              "rva": "0x667d4c",
+              "bytes": "41 57",
+              "mnemonic": "push",
+              "operands": "r15"
+            }
+          ],
+          "target_entry_disassembly": [
+            {
+              "rva": "0x6b8ea0",
+              "bytes": "81 b9 c8 00 00 00 00 00 00 10",
+              "mnemonic": "cmp",
+              "operands": "dword ptr [rcx + 0xc8], 0x10000000"
+            },
+            {
+              "rva": "0x6b8eaa",
+              "bytes": "0f 93 c0",
+              "mnemonic": "setae",
+              "operands": "al"
+            },
+            {
+              "rva": "0x6b8ead",
+              "bytes": "c3",
+              "mnemonic": "ret",
+              "operands": ""
+            },
+            {
+              "rva": "0x6b8eae",
+              "bytes": "cc",
+              "mnemonic": "int3",
+              "operands": ""
+            },
+            {
+              "rva": "0x6b8eaf",
+              "bytes": "cc",
+              "mnemonic": "int3",
+              "operands": ""
+            },
+            {
+              "rva": "0x6b8eb0",
+              "bytes": "cc",
+              "mnemonic": "int3",
+              "operands": ""
+            }
+          ],
+          "call_context": [
+            {
+              "rva": "0x667f2c",
+              "bytes": "48 8d 55 d8",
+              "mnemonic": "lea",
+              "operands": "rdx, [rbp - 0x28]"
+            },
+            {
+              "rva": "0x667f30",
+              "bytes": "49 8b cf",
+              "mnemonic": "mov",
+              "operands": "rcx, r15"
+            },
+            {
+              "rva": "0x667f33",
+              "bytes": "e8 a8 71 83 00",
+              "mnemonic": "call",
+              "operands": "0x140e9f0e0"
+            },
+            {
+              "rva": "0x667f38",
+              "bytes": "49 8b ce",
+              "mnemonic": "mov",
+              "operands": "rcx, r14"
+            },
+            {
+              "rva": "0x667f3b",
+              "bytes": "e8 60 0f 05 00",
+              "mnemonic": "call",
+              "operands": "0x1406b8ea0"
+            },
+            {
+              "rva": "0x667f40",
+              "bytes": "84 c0",
+              "mnemonic": "test",
+              "operands": "al, al"
+            },
+            {
+              "rva": "0x667f42",
+              "bytes": "0f 84 b6 00 00 00",
+              "mnemonic": "je",
+              "operands": "0x140667ffe"
+            }
+          ]
+        },
+        {
+          "name": "ProxyProxy",
+          "address_library_id": 79134,
+          "function_rva": "0xed1640",
+          "offset": "0x37",
+          "call_rva": "0xed1677",
+          "bytes": "e8 24 fd fc ff",
+          "opcode_is_e8_rel32": true,
+          "instruction_boundary_from_function_entry": true,
+          "original_target_rva": "0xea13a0",
+          "expected_target_rva": "0xea13a0",
+          "target_is_executable": true,
+          "function_entry_disassembly": [
+            {
+              "rva": "0xed1640",
+              "bytes": "48 89 5c 24 08",
+              "mnemonic": "mov",
+              "operands": "qword ptr [rsp + 8], rbx"
+            },
+            {
+              "rva": "0xed1645",
+              "bytes": "48 89 74 24 10",
+              "mnemonic": "mov",
+              "operands": "qword ptr [rsp + 0x10], rsi"
+            },
+            {
+              "rva": "0xed164a",
+              "bytes": "57",
+              "mnemonic": "push",
+              "operands": "rdi"
+            },
+            {
+              "rva": "0xed164b",
+              "bytes": "48 83 ec 20",
+              "mnemonic": "sub",
+              "operands": "rsp, 0x20"
+            },
+            {
+              "rva": "0xed164f",
+              "bytes": "48 8b d9",
+              "mnemonic": "mov",
+              "operands": "rbx, rcx"
+            },
+            {
+              "rva": "0xed1652",
+              "bytes": "49 8b f9",
+              "mnemonic": "mov",
+              "operands": "rdi, r9"
+            },
+            {
+              "rva": "0xed1655",
+              "bytes": "49 8b c8",
+              "mnemonic": "mov",
+              "operands": "rcx, r8"
+            },
+            {
+              "rva": "0xed1658",
+              "bytes": "e8 73 fd ca ff",
+              "mnemonic": "call",
+              "operands": "0x140b813d0"
+            }
+          ],
+          "target_entry_disassembly": [
+            {
+              "rva": "0xea13a0",
+              "bytes": "48 89 5c 24 18",
+              "mnemonic": "mov",
+              "operands": "qword ptr [rsp + 0x18], rbx"
+            },
+            {
+              "rva": "0xea13a5",
+              "bytes": "48 89 6c 24 20",
+              "mnemonic": "mov",
+              "operands": "qword ptr [rsp + 0x20], rbp"
+            },
+            {
+              "rva": "0xea13aa",
+              "bytes": "57",
+              "mnemonic": "push",
+              "operands": "rdi"
+            },
+            {
+              "rva": "0xea13ab",
+              "bytes": "48 83 ec 50",
+              "mnemonic": "sub",
+              "operands": "rsp, 0x50"
+            },
+            {
+              "rva": "0xea13af",
+              "bytes": "48 8b 02",
+              "mnemonic": "mov",
+              "operands": "rax, qword ptr [rdx]"
+            },
+            {
+              "rva": "0xea13b2",
+              "bytes": "48 8b f9",
+              "mnemonic": "mov",
+              "operands": "rdi, rcx"
+            }
+          ],
+          "call_context": [
+            {
+              "rva": "0xed166a",
+              "bytes": "4c 8b c7",
+              "mnemonic": "mov",
+              "operands": "r8, rdi"
+            },
+            {
+              "rva": "0xed166d",
+              "bytes": "48 8d 4b 10",
+              "mnemonic": "lea",
+              "operands": "rcx, [rbx + 0x10]"
+            },
+            {
+              "rva": "0xed1671",
+              "bytes": "48 8b d0",
+              "mnemonic": "mov",
+              "operands": "rdx, rax"
+            },
+            {
+              "rva": "0xed1674",
+              "bytes": "48 8b f0",
+              "mnemonic": "mov",
+              "operands": "rsi, rax"
+            },
+            {
+              "rva": "0xed1677",
+              "bytes": "e8 24 fd fc ff",
+              "mnemonic": "call",
+              "operands": "0x140ea13a0"
+            },
+            {
+              "rva": "0xed167c",
+              "bytes": "48 8b 0d 3d 47 2d 02",
+              "mnemonic": "mov",
+              "operands": "rcx, qword ptr [rip + 0x22d473d]"
+            },
+            {
+              "rva": "0xed1683",
+              "bytes": "48 85 c9",
+              "mnemonic": "test",
+              "operands": "rcx, rcx"
+            }
+          ]
+        },
+        {
+          "name": "ProxyRigid",
+          "address_library_id": 79130,
+          "function_rva": "0xed0b40",
+          "offset": "0x3b1",
+          "call_rva": "0xed0ef1",
+          "bytes": "e8 aa 04 fd ff",
+          "opcode_is_e8_rel32": true,
+          "instruction_boundary_from_function_entry": true,
+          "original_target_rva": "0xea13a0",
+          "expected_target_rva": "0xea13a0",
+          "target_is_executable": true,
+          "function_entry_disassembly": [
+            {
+              "rva": "0xed0b40",
+              "bytes": "48 8b c4",
+              "mnemonic": "mov",
+              "operands": "rax, rsp"
+            },
+            {
+              "rva": "0xed0b43",
+              "bytes": "4c 89 48 20",
+              "mnemonic": "mov",
+              "operands": "qword ptr [rax + 0x20], r9"
+            },
+            {
+              "rva": "0xed0b47",
+              "bytes": "4c 89 40 18",
+              "mnemonic": "mov",
+              "operands": "qword ptr [rax + 0x18], r8"
+            },
+            {
+              "rva": "0xed0b4b",
+              "bytes": "55",
+              "mnemonic": "push",
+              "operands": "rbp"
+            },
+            {
+              "rva": "0xed0b4c",
+              "bytes": "56",
+              "mnemonic": "push",
+              "operands": "rsi"
+            },
+            {
+              "rva": "0xed0b4d",
+              "bytes": "57",
+              "mnemonic": "push",
+              "operands": "rdi"
+            },
+            {
+              "rva": "0xed0b4e",
+              "bytes": "41 54",
+              "mnemonic": "push",
+              "operands": "r12"
+            },
+            {
+              "rva": "0xed0b50",
+              "bytes": "41 55",
+              "mnemonic": "push",
+              "operands": "r13"
+            }
+          ],
+          "target_entry_disassembly": [
+            {
+              "rva": "0xea13a0",
+              "bytes": "48 89 5c 24 18",
+              "mnemonic": "mov",
+              "operands": "qword ptr [rsp + 0x18], rbx"
+            },
+            {
+              "rva": "0xea13a5",
+              "bytes": "48 89 6c 24 20",
+              "mnemonic": "mov",
+              "operands": "qword ptr [rsp + 0x20], rbp"
+            },
+            {
+              "rva": "0xea13aa",
+              "bytes": "57",
+              "mnemonic": "push",
+              "operands": "rdi"
+            },
+            {
+              "rva": "0xea13ab",
+              "bytes": "48 83 ec 50",
+              "mnemonic": "sub",
+              "operands": "rsp, 0x50"
+            },
+            {
+              "rva": "0xea13af",
+              "bytes": "48 8b 02",
+              "mnemonic": "mov",
+              "operands": "rax, qword ptr [rdx]"
+            },
+            {
+              "rva": "0xea13b2",
+              "bytes": "48 8b f9",
+              "mnemonic": "mov",
+              "operands": "rdi, rcx"
+            }
+          ],
+          "call_context": [
+            {
+              "rva": "0xed0ee2",
+              "bytes": "41 0f 11 04 2e",
+              "mnemonic": "movups",
+              "operands": "xmmword ptr [r14 + rbp], xmm0"
+            },
+            {
+              "rva": "0xed0ee7",
+              "bytes": "4d 8b c5",
+              "mnemonic": "mov",
+              "operands": "r8, r13"
+            },
+            {
+              "rva": "0xed0eea",
+              "bytes": "48 8b d7",
+              "mnemonic": "mov",
+              "operands": "rdx, rdi"
+            },
+            {
+              "rva": "0xed0eed",
+              "bytes": "48 8d 4e 10",
+              "mnemonic": "lea",
+              "operands": "rcx, [rsi + 0x10]"
+            },
+            {
+              "rva": "0xed0ef1",
+              "bytes": "e8 aa 04 fd ff",
+              "mnemonic": "call",
+              "operands": "0x140ea13a0"
+            },
+            {
+              "rva": "0xed0ef6",
+              "bytes": "48 8b 0d c3 4e 2d 02",
+              "mnemonic": "mov",
+              "operands": "rcx, qword ptr [rip + 0x22d4ec3]"
+            },
+            {
+              "rva": "0xed0efd",
+              "bytes": "48 85 c9",
+              "mnemonic": "test",
+              "operands": "rcx, rcx"
+            }
+          ]
+        },
+        {
+          "name": "RigidProxy",
+          "address_library_id": 79201,
+          "function_rva": "0xed4870",
+          "offset": "0x147",
+          "call_rva": "0xed49b7",
+          "bytes": "e8 a4 09 00 00",
+          "opcode_is_e8_rel32": true,
+          "instruction_boundary_from_function_entry": true,
+          "original_target_rva": "0xed5360",
+          "expected_target_rva": "0xed5360",
+          "target_is_executable": true,
+          "function_entry_disassembly": [
+            {
+              "rva": "0xed4870",
+              "bytes": "48 8b c4",
+              "mnemonic": "mov",
+              "operands": "rax, rsp"
+            },
+            {
+              "rva": "0xed4873",
+              "bytes": "57",
+              "mnemonic": "push",
+              "operands": "rdi"
+            },
+            {
+              "rva": "0xed4874",
+              "bytes": "48 83 ec 70",
+              "mnemonic": "sub",
+              "operands": "rsp, 0x70"
+            },
+            {
+              "rva": "0xed4878",
+              "bytes": "48 c7 40 a8 fe ff ff ff",
+              "mnemonic": "mov",
+              "operands": "qword ptr [rax - 0x58], 0xfffffffffffffffe"
+            },
+            {
+              "rva": "0xed4880",
+              "bytes": "48 89 58 10",
+              "mnemonic": "mov",
+              "operands": "qword ptr [rax + 0x10], rbx"
+            },
+            {
+              "rva": "0xed4884",
+              "bytes": "0f 29 70 e8",
+              "mnemonic": "movaps",
+              "operands": "xmmword ptr [rax - 0x18], xmm6"
+            },
+            {
+              "rva": "0xed4888",
+              "bytes": "0f 29 78 d8",
+              "mnemonic": "movaps",
+              "operands": "xmmword ptr [rax - 0x28], xmm7"
+            },
+            {
+              "rva": "0xed488c",
+              "bytes": "48 8b d9",
+              "mnemonic": "mov",
+              "operands": "rbx, rcx"
+            }
+          ],
+          "target_entry_disassembly": [
+            {
+              "rva": "0xed5360",
+              "bytes": "48 8b c4",
+              "mnemonic": "mov",
+              "operands": "rax, rsp"
+            },
+            {
+              "rva": "0xed5363",
+              "bytes": "57",
+              "mnemonic": "push",
+              "operands": "rdi"
+            },
+            {
+              "rva": "0xed5364",
+              "bytes": "48 81 ec 80 00 00 00",
+              "mnemonic": "sub",
+              "operands": "rsp, 0x80"
+            },
+            {
+              "rva": "0xed536b",
+              "bytes": "48 c7 40 98 fe ff ff ff",
+              "mnemonic": "mov",
+              "operands": "qword ptr [rax - 0x68], 0xfffffffffffffffe"
+            },
+            {
+              "rva": "0xed5373",
+              "bytes": "48 89 58 08",
+              "mnemonic": "mov",
+              "operands": "qword ptr [rax + 8], rbx"
+            },
+            {
+              "rva": "0xed5377",
+              "bytes": "0f 29 70 e8",
+              "mnemonic": "movaps",
+              "operands": "xmmword ptr [rax - 0x18], xmm6"
+            }
+          ],
+          "call_context": [
+            {
+              "rva": "0xed49aa",
+              "bytes": "74 08",
+              "mnemonic": "je",
+              "operands": "0x140ed49b4"
+            },
+            {
+              "rva": "0xed49ac",
+              "bytes": "48 8b cb",
+              "mnemonic": "mov",
+              "operands": "rcx, rbx"
+            },
+            {
+              "rva": "0xed49af",
+              "bytes": "e8 6c b9 fc ff",
+              "mnemonic": "call",
+              "operands": "0x140ea0320"
+            },
+            {
+              "rva": "0xed49b4",
+              "bytes": "48 8b cb",
+              "mnemonic": "mov",
+              "operands": "rcx, rbx"
+            },
+            {
+              "rva": "0xed49b7",
+              "bytes": "e8 a4 09 00 00",
+              "mnemonic": "call",
+              "operands": "0x140ed5360"
+            },
+            {
+              "rva": "0xed49bc",
+              "bytes": "90",
+              "mnemonic": "nop",
+              "operands": ""
+            },
+            {
+              "rva": "0xed49bd",
+              "bytes": "48 85 ff",
+              "mnemonic": "test",
+              "operands": "rdi, rdi"
+            }
+          ]
+        },
+        {
+          "name": "RigidRigid",
+          "address_library_id": 79186,
+          "function_rva": "0xed31a0",
+          "offset": "0x2a9",
+          "call_rva": "0xed3449",
+          "bytes": "e8 52 df fc ff",
+          "opcode_is_e8_rel32": true,
+          "instruction_boundary_from_function_entry": true,
+          "original_target_rva": "0xea13a0",
+          "expected_target_rva": "0xea13a0",
+          "target_is_executable": true,
+          "function_entry_disassembly": [
+            {
+              "rva": "0xed31a0",
+              "bytes": "48 8b c4",
+              "mnemonic": "mov",
+              "operands": "rax, rsp"
+            },
+            {
+              "rva": "0xed31a3",
+              "bytes": "4c 89 48 20",
+              "mnemonic": "mov",
+              "operands": "qword ptr [rax + 0x20], r9"
+            },
+            {
+              "rva": "0xed31a7",
+              "bytes": "4c 89 40 18",
+              "mnemonic": "mov",
+              "operands": "qword ptr [rax + 0x18], r8"
+            },
+            {
+              "rva": "0xed31ab",
+              "bytes": "48 89 50 10",
+              "mnemonic": "mov",
+              "operands": "qword ptr [rax + 0x10], rdx"
+            },
+            {
+              "rva": "0xed31af",
+              "bytes": "55",
+              "mnemonic": "push",
+              "operands": "rbp"
+            },
+            {
+              "rva": "0xed31b0",
+              "bytes": "53",
+              "mnemonic": "push",
+              "operands": "rbx"
+            },
+            {
+              "rva": "0xed31b1",
+              "bytes": "56",
+              "mnemonic": "push",
+              "operands": "rsi"
+            },
+            {
+              "rva": "0xed31b2",
+              "bytes": "57",
+              "mnemonic": "push",
+              "operands": "rdi"
+            }
+          ],
+          "target_entry_disassembly": [
+            {
+              "rva": "0xea13a0",
+              "bytes": "48 89 5c 24 18",
+              "mnemonic": "mov",
+              "operands": "qword ptr [rsp + 0x18], rbx"
+            },
+            {
+              "rva": "0xea13a5",
+              "bytes": "48 89 6c 24 20",
+              "mnemonic": "mov",
+              "operands": "qword ptr [rsp + 0x20], rbp"
+            },
+            {
+              "rva": "0xea13aa",
+              "bytes": "57",
+              "mnemonic": "push",
+              "operands": "rdi"
+            },
+            {
+              "rva": "0xea13ab",
+              "bytes": "48 83 ec 50",
+              "mnemonic": "sub",
+              "operands": "rsp, 0x50"
+            },
+            {
+              "rva": "0xea13af",
+              "bytes": "48 8b 02",
+              "mnemonic": "mov",
+              "operands": "rax, qword ptr [rdx]"
+            },
+            {
+              "rva": "0xea13b2",
+              "bytes": "48 8b f9",
+              "mnemonic": "mov",
+              "operands": "rdi, rcx"
+            }
+          ],
+          "call_context": [
+            {
+              "rva": "0xed343a",
+              "bytes": "74 12",
+              "mnemonic": "je",
+              "operands": "0x140ed344e"
+            },
+            {
+              "rva": "0xed343c",
+              "bytes": "48 8d 8f d0 fc ff ff",
+              "mnemonic": "lea",
+              "operands": "rcx, [rdi - 0x330]"
+            },
+            {
+              "rva": "0xed3443",
+              "bytes": "4c 8b c6",
+              "mnemonic": "mov",
+              "operands": "r8, rsi"
+            },
+            {
+              "rva": "0xed3446",
+              "bytes": "48 8b d0",
+              "mnemonic": "mov",
+              "operands": "rdx, rax"
+            },
+            {
+              "rva": "0xed3449",
+              "bytes": "e8 52 df fc ff",
+              "mnemonic": "call",
+              "operands": "0x140ea13a0"
+            },
+            {
+              "rva": "0xed344e",
+              "bytes": "0f 10 66 10",
+              "mnemonic": "movups",
+              "operands": "xmm4, xmmword ptr [rsi + 0x10]"
+            },
+            {
+              "rva": "0xed3452",
+              "bytes": "0f 29 64 24 40",
+              "mnemonic": "movaps",
+              "operands": "xmmword ptr [rsp + 0x40], xmm4"
+            }
+          ]
+        }
+      ],
+      "virtual_hooks": [
+        {
+          "name": "ProcessConstraintsCallback",
+          "class": "bhkCharProxyController",
+          "address_library_id": 240558,
+          "primary_subtable_index": 0,
+          "table_rva": "0x19edfb8",
+          "slot": 1,
+          "byte_offset": "0x8",
+          "pointer_value": "0x140ed0b40",
+          "target_rva": "0xed0b40",
+          "expected_target_rva": "0xed0b40",
+          "target_is_executable": true,
+          "target_entry_disassembly": [
+            {
+              "rva": "0xed0b40",
+              "bytes": "48 8b c4",
+              "mnemonic": "mov",
+              "operands": "rax, rsp"
+            },
+            {
+              "rva": "0xed0b43",
+              "bytes": "4c 89 48 20",
+              "mnemonic": "mov",
+              "operands": "qword ptr [rax + 0x20], r9"
+            },
+            {
+              "rva": "0xed0b47",
+              "bytes": "4c 89 40 18",
+              "mnemonic": "mov",
+              "operands": "qword ptr [rax + 0x18], r8"
+            },
+            {
+              "rva": "0xed0b4b",
+              "bytes": "55",
+              "mnemonic": "push",
+              "operands": "rbp"
+            },
+            {
+              "rva": "0xed0b4c",
+              "bytes": "56",
+              "mnemonic": "push",
+              "operands": "rsi"
+            },
+            {
+              "rva": "0xed0b4d",
+              "bytes": "57",
+              "mnemonic": "push",
+              "operands": "rdi"
+            }
+          ],
+          "commonlib_header_claim": "bhkCharProxyController's primary base is hkpCharacterProxyListener; ProcessConstraintsCallback is inherited slot 1.",
+          "header_evidence": [
+            {
+              "path": "E:\\source\\repos\\CommonLibSSE-NG-ng\\include\\RE\\B\\bhkCharProxyController.h",
+              "line": 12,
+              "text": "public hkpCharacterProxyListener,  // 000"
+            },
+            {
+              "path": "E:\\source\\repos\\CommonLibSSE-NG-ng\\include\\RE\\B\\bhkCharProxyController.h",
+              "line": 22,
+              "text": "void ProcessConstraintsCallback(const hkpCharacterProxy* a_proxy, const hkArray<hkpRootCdPoint>& a_manifold, hkpSimplexSolverInput& a_input) override;                  // 01"
+            },
+            {
+              "path": "E:\\source\\repos\\CommonLibSSE-NG-ng\\include\\RE\\H\\hkpCharacterProxyListener.h",
+              "line": 48,
+              "text": "virtual void ProcessConstraintsCallback(const hkpCharacterProxy* a_proxy, const hkArray<hkpRootCdPoint>& a_manifold, hkpSimplexSolverInput& a_input);                  // 01 - { return; }"
+            }
+          ],
+          "source_install_check": "VTABLE_bhkCharProxyController\\s*\\[\\s*0\\s*\\][\\s\\S]{0,300}?write_vfunc\\(\\s*0x1\\s*,\\s*&Hook_ProcessConstraintsCallback"
+        },
+        {
+          "name": "DeleteThis",
+          "class": "bhkCharRigidBodyController",
+          "address_library_id": 240580,
+          "primary_subtable_index": 0,
+          "table_rva": "0x19ee668",
+          "slot": 1,
+          "byte_offset": "0x8",
+          "pointer_value": "0x140d27520",
+          "target_rva": "0xd27520",
+          "expected_target_rva": "0xd27520",
+          "target_is_executable": true,
+          "target_entry_disassembly": [
+            {
+              "rva": "0xd27520",
+              "bytes": "48 85 c9",
+              "mnemonic": "test",
+              "operands": "rcx, rcx"
+            },
+            {
+              "rva": "0xd27523",
+              "bytes": "74 0b",
+              "mnemonic": "je",
+              "operands": "0x140d27530"
+            },
+            {
+              "rva": "0xd27525",
+              "bytes": "48 8b 01",
+              "mnemonic": "mov",
+              "operands": "rax, qword ptr [rcx]"
+            },
+            {
+              "rva": "0xd27528",
+              "bytes": "ba 01 00 00 00",
+              "mnemonic": "mov",
+              "operands": "edx, 1"
+            },
+            {
+              "rva": "0xd2752d",
+              "bytes": "48 ff 20",
+              "mnemonic": "jmp",
+              "operands": "qword ptr [rax]"
+            },
+            {
+              "rva": "0xd27530",
+              "bytes": "c3",
+              "mnemonic": "ret",
+              "operands": ""
+            }
+          ],
+          "commonlib_header_claim": "The primary controller base inherits NiRefObject; DeleteThis is its slot 1.",
+          "header_evidence": [
+            {
+              "path": "E:\\source\\repos\\CommonLibSSE-NG-ng\\include\\RE\\B\\bhkCharRigidBodyController.h",
+              "line": 10,
+              "text": "public bhkCharacterController,        // 00"
+            },
+            {
+              "path": "E:\\source\\repos\\CommonLibSSE-NG-ng\\include\\RE\\B\\bhkCharacterController.h",
+              "line": 74,
+              "text": "public NiRefObject,                                 // 000"
+            },
+            {
+              "path": "E:\\source\\repos\\CommonLibSSE-NG-ng\\include\\RE\\N\\NiRefObject.h",
+              "line": 19,
+              "text": "virtual void DeleteThis();  // 01"
+            }
+          ],
+          "source_install_check": "VTABLE_bhkCharRigidBodyController\\s*\\[\\s*0\\s*\\][\\s\\S]{0,300}?write_vfunc\\(\\s*0x1\\s*,\\s*&Hook_DeleteThis"
+        },
+        {
+          "name": "ContactPointCallback",
+          "class": "FOCollisionListener",
+          "address_library_id": 196248,
+          "primary_subtable_index": 0,
+          "table_rva": "0x17ec630",
+          "slot": 0,
+          "byte_offset": "0x0",
+          "pointer_value": "0x1403f4b90",
+          "target_rva": "0x3f4b90",
+          "expected_target_rva": "0x3f4b90",
+          "target_is_executable": true,
+          "target_entry_disassembly": [
+            {
+              "rva": "0x3f4b90",
+              "bytes": "48 8b c4",
+              "mnemonic": "mov",
+              "operands": "rax, rsp"
+            },
+            {
+              "rva": "0x3f4b93",
+              "bytes": "55",
+              "mnemonic": "push",
+              "operands": "rbp"
+            },
+            {
+              "rva": "0x3f4b94",
+              "bytes": "56",
+              "mnemonic": "push",
+              "operands": "rsi"
+            },
+            {
+              "rva": "0x3f4b95",
+              "bytes": "57",
+              "mnemonic": "push",
+              "operands": "rdi"
+            },
+            {
+              "rva": "0x3f4b96",
+              "bytes": "41 56",
+              "mnemonic": "push",
+              "operands": "r14"
+            },
+            {
+              "rva": "0x3f4b98",
+              "bytes": "41 57",
+              "mnemonic": "push",
+              "operands": "r15"
+            }
+          ],
+          "commonlib_header_claim": "FOCollisionListener's primary base is bhkBackfaceContactListener and its override occupies inherited slot 0.",
+          "header_evidence": [
+            {
+              "path": "E:\\source\\repos\\CommonLibSSE-NG-ng\\include\\RE\\F\\FOCollisionListener.h",
+              "line": 14,
+              "text": "public bhkBackfaceContactListener,           // 00"
+            },
+            {
+              "path": "E:\\source\\repos\\CommonLibSSE-NG-ng\\include\\RE\\F\\FOCollisionListener.h",
+              "line": 33,
+              "text": "void ContactPointCallback(const hkpContactPointEvent&) override;  // 00"
+            },
+            {
+              "path": "E:\\source\\repos\\CommonLibSSE-NG-ng\\include\\RE\\B\\bhkBackfaceContactListener.h",
+              "line": 7,
+              "text": "class bhkBackfaceContactListener : public bhkContactListener"
+            },
+            {
+              "path": "E:\\source\\repos\\CommonLibSSE-NG-ng\\include\\RE\\H\\hkpContactListener.h",
+              "line": 18,
+              "text": "virtual void ContactPointCallback(const hkpContactPointEvent&) {}   // 00"
+            }
+          ],
+          "source_install_check": "VTABLE_FOCollisionListener\\s*\\[\\s*0\\s*\\][\\s\\S]{0,300}?write_vfunc\\(\\s*0x0\\s*,\\s*&Hook_ContactPointCallback"
+        }
+      ],
+      "errors": [],
+      "status": "PASS"
+    }
+  ],
+  "pitch_stub_abi": {
+    "source_evidence": [
+      {
+        "path": "E:\\source\\repos\\AnimationMotionFix-master\\include\\Hooks.h",
+        "line": 20,
+        "text": "mov(r8, rdi);  // rdi = Actor*, same on AE, VR"
+      },
+      {
+        "path": "E:\\source\\repos\\AnimationMotionFix-master\\include\\Hooks.h",
+        "line": 21,
+        "text": "call(ptr[rip + hookLabel]);"
+      },
+      {
+        "path": "E:\\source\\repos\\AnimationMotionFix-master\\include\\Hooks.h",
+        "line": 23,
+        "text": "jmp(ptr[rip + retnLabel]);"
+      },
+      {
+        "path": "E:\\source\\repos\\AnimationMotionFix-master\\include\\Hooks.h",
+        "line": 37,
+        "text": "auto call = Hook(stl::unrestricted_cast<std::uintptr_t>(Hook_ConvertMoveDirToTranslation), target + 5);"
+      },
+      {
+        "path": "E:\\source\\repos\\AnimationMotionFix-master\\include\\Hooks.h",
+        "line": 38,
+        "text": "call.ready();"
+      },
+      {
+        "path": "E:\\source\\repos\\AnimationMotionFix-master\\include\\Hooks.h",
+        "line": 41,
+        "text": "auto* code = trampoline.allocate(call.getSize());"
+      },
+      {
+        "path": "E:\\source\\repos\\AnimationMotionFix-master\\include\\Hooks.h",
+        "line": 42,
+        "text": "std::memcpy(code, call.getCode(), call.getSize());"
+      },
+      {
+        "path": "E:\\source\\repos\\AnimationMotionFix-master\\include\\Hooks.h",
+        "line": 43,
+        "text": "ConvertMoveDirToTranslation = trampoline.write_branch<5>(target, code);"
+      },
+      {
+        "path": "E:\\source\\repos\\AnimationMotionFix-master\\include\\Hooks.h",
+        "line": 11,
+        "text": "static bool RevertPitchRotation(RE::Actor* a_actor, RE::NiPoint3& a_translation);"
+      }
+    ],
+    "register_assessment": "The source stub leaves RCX and RDX untouched, copies RDI into R8, calls the hook, then tail-jumps to target+5. Under Win64 x64 calling convention R8 is a volatile argument register and RDI is nonvolatile; the register use is consistent with the declared third Actor* argument. The PE call windows show RCX/RDX stack-address setup and RDI-based field access before the original call, but do not by themselves prove RDI's C++ type.",
+    "stack_assessment": "The generated stub makes a nested call and then jumps to the original continuation; the nested return balances its pushed return address. The stub itself emits no stack adjustment or explicit shadow-space reservation, so it relies on the original call site's Win64 pre-call alignment and 32-byte shadow area. The audit records function prologues and call windows but does not execute the code or prove every dynamic stack path.",
+    "runtime_evidence": [
+      {
+        "runtime": "1.5.97",
+        "pitch_translation_function_rva": "0x5d87f0",
+        "entry": [
+          {
+            "rva": "0x5d87f0",
+            "bytes": "48 8b c4",
+            "mnemonic": "mov",
+            "operands": "rax, rsp"
+          },
+          {
+            "rva": "0x5d87f3",
+            "bytes": "55",
+            "mnemonic": "push",
+            "operands": "rbp"
+          },
+          {
+            "rva": "0x5d87f4",
+            "bytes": "53",
+            "mnemonic": "push",
+            "operands": "rbx"
+          },
+          {
+            "rva": "0x5d87f5",
+            "bytes": "56",
+            "mnemonic": "push",
+            "operands": "rsi"
+          },
+          {
+            "rva": "0x5d87f6",
+            "bytes": "57",
+            "mnemonic": "push",
+            "operands": "rdi"
+          },
+          {
+            "rva": "0x5d87f7",
+            "bytes": "41 54",
+            "mnemonic": "push",
+            "operands": "r12"
+          },
+          {
+            "rva": "0x5d87f9",
+            "bytes": "41 56",
+            "mnemonic": "push",
+            "operands": "r14"
+          },
+          {
+            "rva": "0x5d87fb",
+            "bytes": "41 57",
+            "mnemonic": "push",
+            "operands": "r15"
+          }
+        ],
+        "call_context": [
+          {
+            "rva": "0x5d8b3f",
+            "bytes": "48 8b 8f f0 00 00 00",
+            "mnemonic": "mov",
+            "operands": "rcx, qword ptr [rdi + 0xf0]"
+          },
+          {
+            "rva": "0x5d8b46",
+            "bytes": "e8 75 45 0a 00",
+            "mnemonic": "call",
+            "operands": "0x14067d0c0"
+          },
+          {
+            "rva": "0x5d8b4b",
+            "bytes": "48 8d 54 24 20",
+            "mnemonic": "lea",
+            "operands": "rdx, [rsp + 0x20]"
+          },
+          {
+            "rva": "0x5d8b50",
+            "bytes": "48 8d 4c 24 50",
+            "mnemonic": "lea",
+            "operands": "rcx, [rsp + 0x50]"
+          },
+          {
+            "rva": "0x5d8b55",
+            "bytes": "e8 96 17 b2 00",
+            "mnemonic": "call",
+            "operands": "0x1410fa2f0"
+          },
+          {
+            "rva": "0x5d8b5a",
+            "bytes": "f3 0f 10 54 24 5c",
+            "mnemonic": "movss",
+            "operands": "xmm2, dword ptr [rsp + 0x5c]"
+          },
+          {
+            "rva": "0x5d8b60",
+            "bytes": "f3 41 0f 59 d1",
+            "mnemonic": "mulss",
+            "operands": "xmm2, xmm9"
+          }
+        ]
+      },
+      {
+        "runtime": "1.6.1170",
+        "pitch_translation_function_rva": "0x6698d0",
+        "entry": [
+          {
+            "rva": "0x6698d0",
+            "bytes": "48 8b c4",
+            "mnemonic": "mov",
+            "operands": "rax, rsp"
+          },
+          {
+            "rva": "0x6698d3",
+            "bytes": "55",
+            "mnemonic": "push",
+            "operands": "rbp"
+          },
+          {
+            "rva": "0x6698d4",
+            "bytes": "56",
+            "mnemonic": "push",
+            "operands": "rsi"
+          },
+          {
+            "rva": "0x6698d5",
+            "bytes": "57",
+            "mnemonic": "push",
+            "operands": "rdi"
+          },
+          {
+            "rva": "0x6698d6",
+            "bytes": "41 54",
+            "mnemonic": "push",
+            "operands": "r12"
+          },
+          {
+            "rva": "0x6698d8",
+            "bytes": "41 55",
+            "mnemonic": "push",
+            "operands": "r13"
+          },
+          {
+            "rva": "0x6698da",
+            "bytes": "41 56",
+            "mnemonic": "push",
+            "operands": "r14"
+          },
+          {
+            "rva": "0x6698dc",
+            "bytes": "41 57",
+            "mnemonic": "push",
+            "operands": "r15"
+          }
+        ],
+        "call_context": [
+          {
+            "rva": "0x669cb8",
+            "bytes": "48 8b 8f f8 00 00 00",
+            "mnemonic": "mov",
+            "operands": "rcx, qword ptr [rdi + 0xf8]"
+          },
+          {
+            "rva": "0x669cbf",
+            "bytes": "e8 ac 6c 0a 00",
+            "mnemonic": "call",
+            "operands": "0x140710970"
+          },
+          {
+            "rva": "0x669cc4",
+            "bytes": "48 8d 54 24 20",
+            "mnemonic": "lea",
+            "operands": "rdx, [rsp + 0x20]"
+          },
+          {
+            "rva": "0x669cc9",
+            "bytes": "48 8d 4c 24 50",
+            "mnemonic": "lea",
+            "operands": "rcx, [rsp + 0x50]"
+          },
+          {
+            "rva": "0x669cce",
+            "bytes": "e8 cd 7c b8 00",
+            "mnemonic": "call",
+            "operands": "0x1411f19a0"
+          },
+          {
+            "rva": "0x669cd3",
+            "bytes": "f3 0f 10 54 24 5c",
+            "mnemonic": "movss",
+            "operands": "xmm2, dword ptr [rsp + 0x5c]"
+          },
+          {
+            "rva": "0x669cd9",
+            "bytes": "f3 41 0f 59 d2",
+            "mnemonic": "mulss",
+            "operands": "xmm2, xmm10"
+          }
+        ]
+      }
+    ]
+  },
+  "evidence_scope": {
+    "binary_proven": "Each listed call site is an E8 rel32 instruction at the decoded Address Library function RVA plus the declared offset; its resolved target equals the recorded executable RVA. Vtable bytes at the selected Address Library table and slot equal the recorded executable target.",
+    "header_only": "Virtual method names/signatures, inheritance, primary-base offsets, and intended slot names are CommonLib declaration claims checked textually. The verifier does not prove C++ runtime object layout or dynamic semantic behavior from headers.",
+    "limits": "Static PE/Address Library evidence does not prove runtime instance vptrs, call frequency, game-state behavior, thread safety, or the complete ABI of non-exported functions. For PitchTranslation, the hook's r8=rdi actor mapping is a source and call-site-register inference, not a standalone type proof from machine code."
+  }
+}

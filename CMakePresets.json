@@ -1,0 +1,21 @@
+{
+  "version": 3,
+  "cmakeMinimumRequired": { "major": 3, "minor": 21, "patch": 0 },
+  "configurePresets": [
+    {
+      "name": "ng-release",
+      "displayName": "NG Release (1.5.97 + 1.6.1170)",
+      "generator": "Ninja",
+      "binaryDir": "${sourceDir}/build/ng-release",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Release",
+        "CMAKE_TOOLCHAIN_FILE": "$env{VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake",
+        "VCPKG_TARGET_TRIPLET": "x64-windows-static-md",
+        "COMMONLIBSSE_NG_PATH": "${sourceDir}/../CommonLibSSE-NG-ng"
+      }
+    }
+  ],
+  "buildPresets": [
+    { "name": "ng-release", "configurePreset": "ng-release" }
+  ]
+}
